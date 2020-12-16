@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { Parallax, Background } from 'react-parallax';
 import Container from "react-bootstrap/Container";
 import Fade from "react-reveal/Fade";
@@ -8,6 +7,9 @@ import MyNavbar from './components/navbar/Navbar';
 import MyCarousel from './components/carousel/Carousel';
 import TitleMessage from './components/title-message/TitleMessage';
 import About from './pages/about/About';
+import Skills from './pages/skills/Skills';
+
+import './App.css';
 
 const App = () => {
   return (
@@ -27,6 +29,22 @@ const App = () => {
             <Container className="container-box rounded">
               <Fade duration={500}>
                 <About />
+              </Fade>
+            </Container>
+          </div>
+        </Parallax>
+      </div>
+      <div>
+        <Parallax
+          blur={{ min: -30, max: 30 }}
+          bgImage={require("./assets/img/parallex/background.webp")}
+          bgImageAlt=""
+          strength={-200}
+        >
+          <div>
+            <Container className="container-box rounded">
+              <Fade duration={500}>
+                <Skills />
               </Fade>
             </Container>
           </div>

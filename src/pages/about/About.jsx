@@ -75,7 +75,7 @@ const About = () => {
                 </Container>
             </div>
         </div>
-    )
+    );
 };
 
 export default About;
