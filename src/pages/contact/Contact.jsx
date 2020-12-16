@@ -3,12 +3,13 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Logo from '../../assets/icons/logo.png';
 import "./Contact.style.css";
 
 const Contact = () => {
 
     return (
-        <div className="#contact">
+        <div id="contact">
             <h1 className="pt-3 text-center font-details-b pb-3">Contact Me</h1>
             <Jumbotron className="contact-jumbotron">
                 <Row>

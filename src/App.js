@@ -1,5 +1,5 @@
 import React from 'react';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 import Container from "react-bootstrap/Container";
 import Fade from "react-reveal/Fade";
 import Slide from 'react-reveal/Slide';

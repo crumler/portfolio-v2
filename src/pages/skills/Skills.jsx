@@ -18,7 +18,7 @@ const Skills = () => {
                     <Col md={4}>
                         <Card className="focus mt-2 mb-2">
                             <Card.Body>
-                                <Card.Title className="text-center  card-title">Frontend</Card.Title>
+                                <Card.Title className="text-center  card-title">Front-End</Card.Title>
                                 <hr />
                                 <Card.Text className="card-text d-flex justify-content-start flex-column">
                                     {skills.frontend.map((skill, index) => (
@@ -37,7 +37,7 @@ const Skills = () => {
                     <Col md={4}>
                         <Card className="focus mt-2 mb-2">
                             <Card.Body>
-                                <Card.Title className="text-center  card-title">Backend</Card.Title>
+                                <Card.Title className="text-center  card-title">Back-End</Card.Title>
                                 <hr />
                                 <Card.Text className="card-text d-flex justify-content-start flex-column">
                                     {skills.backend.map((skill, index) => (

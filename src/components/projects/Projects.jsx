@@ -1,5 +1,5 @@
 import React from 'react';
-import { Timeline, Events, UrlButton, ImageEvent } from '@merc/react-timeline';
+import { Timeline, Events, UrlButton, ImageEvent, themes, createTheme } from '@merc/react-timeline';
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
@@ -8,8 +8,8 @@ import L_NASA from '../../assets/img/projects/nasa.webp';
 import L_Spotify from '../../assets/img/projects/playlist.webp';
 import L_Covid from '../../assets/img/projects/covidthumbnail.webp';
 import L_Recipeazy from '../../assets/img/projects/recipeazy.webp';
-// import L_Combo from '../../assets/img/projects/cbthumbnail.webp';
-// import L_Mega from '../../assets/img/projects/creaturethumbnail.webp';
+import L_Combo from '../../assets/img/projects/cbthumbnail.webp';
+import L_Mega from '../../assets/img/projects/creaturethumbnail.webp';
 
 // Skill Images
 import L_REACT from "../../assets/img/skills/react.svg";
@@ -28,12 +28,30 @@ import L_REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
 
 import "./Projects.style.css";
 
+const customTheme = createTheme(themes.default, {
+    card: {
+        backgroundColor: '#efefef',
+    },
+    date: {
+        backgroundColor: '#2d43ba',
+    },
+    marker: {
+        borderColor: '#2d43ba',
+    },
+    timelineTrack: {
+        backgroundColor: '#2d43ba',
+    },
+    urlButton: {
+        backgroundColor: '#2d43ba',
+    },
+});
+
 const Projects = () => {
 
     return (
         <div id="projects">
             <h1 className="pt-3 text-center font-details-b pb-3">Projects</h1>
-            <Timeline>
+            <Timeline theme={customTheme}>
                 <Events>
                     {/* Spotify Music Playlist */}
                     <ImageEvent
@@ -51,6 +69,7 @@ const Projects = () => {
                                             as={Card.Header}
                                             eventKey="0"
                                             className="p-2 text-center accordian-main"
+                                            style={{ backgroundColor: "#2d43ba" }}
                                         >
                                             Project Details
                                         </Accordion.Toggle>
@@ -215,6 +234,7 @@ const Projects = () => {
                                             as={Card.Header}
                                             eventKey="0"
                                             className="p-2 text-center accordian-main"
+                                            style={{ backgroundColor: "#2d43ba" }}
                                         >
                                             Project Details
                                         </Accordion.Toggle>
@@ -372,6 +392,7 @@ const Projects = () => {
                                             as={Card.Header}
                                             eventKey="0"
                                             className="p-2 text-center accordian-main"
+                                            style={{ backgroundColor: "#2d43ba" }}
                                         >
                                             Project Details
                                         </Accordion.Toggle>
@@ -473,6 +494,7 @@ const Projects = () => {
                                             as={Card.Header}
                                             eventKey="0"
                                             className="p-2 text-center accordian-main"
+                                            style={{ backgroundColor: "#2d43ba" }}
                                         >
                                             Project Details
                                         </Accordion.Toggle>
@@ -559,7 +581,7 @@ const Projects = () => {
 
                     {/* Combo Breaker Site Replication Project */}
 
-                    {/* <ImageEvent
+                    <ImageEvent
                         date="09/14/2020"
                         className="text-center"
                         text="Combo Breaker Static Layout"
@@ -574,6 +596,7 @@ const Projects = () => {
                                             as={Card.Header}
                                             eventKey="0"
                                             className="p-2 text-center accordian-main"
+                                            style={{ backgroundColor: "#2d43ba" }}
                                         >
                                             Project Details
                                         </Accordion.Toggle>
@@ -625,8 +648,7 @@ const Projects = () => {
                                 >
                                     Deployed Version
                                 </UrlButton>
-                            </div>
-                            <div className="d-flex justify-content-between flex-nowrap text-center">
+
                                 <UrlButton
                                     href="https://github.com/crumler/staticLayout"
                                     target="_blank"
@@ -635,7 +657,75 @@ const Projects = () => {
                                 </UrlButton>
                             </div>
                         </div>
-                    </ImageEvent> */}
+                    </ImageEvent>
+
+                    {/* Mega Man Creature Project */}
+
+                    <ImageEvent
+                        date="09/11/2020"
+                        className="text-center"
+                        text="Mega Man CSS Creature"
+                        src={L_Mega}
+                        alt="Mega Man CSS Creature"
+                    >
+                        <div className="d-flex justify-content-between flex-column mt-1">
+                            <div>
+                                <Accordion>
+                                    <Card>
+                                        <Accordion.Toggle
+                                            as={Card.Header}
+                                            eventKey="0"
+                                            className="p-2 text-center accordian-main"
+                                            style={{ backgroundColor: "#2d43ba" }}
+                                        >
+                                            Project Details
+                                        </Accordion.Toggle>
+
+                                        <Accordion.Collapse eventKey="0" className="text-left">
+                                            <Card.Body>
+                                                <strong>Description:</strong> My very first project within our web development course at Eleven Fifty Academy was to create a creature using only CSS code. I went with the classic Nintendo character known as "Mega Man".
+                                                <hr />
+                                                <strong>Features:</strong>
+                                                <ul className="list-styles pt-1">
+                                                    <li>Created using only CSS</li>
+                                                </ul>
+                                                <hr />
+                                                <strong>Technology used:</strong>
+                                                <ul>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_CSS3}
+                                                                alt="CSS 3"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                        CSS3
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                </Accordion>
+                            </div>
+                            <div className="d-flex justify-content-between flex-nowrap text-center">
+                                <UrlButton
+                                    href="https://crumler.github.io/CSS-Creature/"
+                                    target="_blank"
+                                >
+                                    Deployed Version
+                                </UrlButton>
+
+                                <UrlButton
+                                    href="https://github.com/crumler/CSS-Creature"
+                                    target="_blank"
+                                >
+                                    Source Code
+                                </UrlButton>
+                            </div>
+                        </div>
+                    </ImageEvent>
 
 
                 </Events>
