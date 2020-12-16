@@ -3,7 +3,6 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Logo from '../../assets/icons/logo.png';
 import "./Contact.style.css";
 
 const Contact = () => {
