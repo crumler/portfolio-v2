@@ -10,6 +10,7 @@ import TitleMessage from './components/title-message/TitleMessage';
 import About from './pages/about/About';
 import Skills from './pages/skills/Skills';
 import Experience from './pages/experience/Experience';
+import Projects from './components/projects/Projects';
 
 import './App.css';
 
@@ -68,8 +69,14 @@ const App = () => {
           </div>
         </Parallax>
       </div>
+      <Container className="container-box rounded">
+        <Slide bottom duration={500}>
+          <hr />
+          <Projects />
+        </Slide>
+      </Container>
     </div>
   );
-}
+};
 
 export default App;
