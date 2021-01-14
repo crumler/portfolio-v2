@@ -15,6 +15,7 @@ import Experience from './pages/experience/Experience';
 import Projects from './components/projects/Projects';
 import Contact from './pages/contact/Contact';
 import Footer from './components/footer/Footer';
+import Accomplishments from './pages/accomplishments/Accomplishments';
 
 import './App.css';
 
@@ -80,6 +81,12 @@ const App = () => {
         <Slide bottom duration={500}>
           <hr />
           <Projects />
+        </Slide>
+      </Container>
+      <Container className="container-box rounded">
+        <Slide bottom duration={500}>
+          <hr />
+          <Accomplishments />
         </Slide>
       </Container>
       <Container className="container-box rounded">
