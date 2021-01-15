@@ -40,7 +40,7 @@ const Accomplishments = () => {
                 <Events>
                     <ImageEvent
                         date="01/13/2021"
-                        className="text-center"
+                        className="text-center project-title"
                         text="Build Responsive Real World Websites with HTML5 and CSS3"
                         src={L_HTML_CSS}
                         alt="HTML and CSS Certification"

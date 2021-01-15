@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 hr {
   border: 0;
   height: 1px;
@@ -19,3 +21,5 @@ hr {
   height: 100%;
   z-index: 1;
 }
+
+.project-title {font-family: 'Roboto', sans-serif;}

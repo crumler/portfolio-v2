@@ -56,7 +56,7 @@ const Projects = () => {
                     {/* Spotify Music Playlist */}
                     <ImageEvent
                         date="12/08/2020"
-                        className="text-center"
+                        className="text-center project-title"
                         text="Spotify Music Playlist"
                         src={L_Spotify}
                         alt="Spotify Music Playlist"
@@ -221,7 +221,7 @@ const Projects = () => {
 
                     <ImageEvent
                         date="11/05/2020"
-                        className="text-center"
+                        className="text-center  project-title"
                         text="RecipEazy"
                         src={L_Recipeazy}
                         alt="RecipEazy"
@@ -379,7 +379,7 @@ const Projects = () => {
 
                     <ImageEvent
                         date="10/08/2020"
-                        className="text-center"
+                        className="text-center  project-title"
                         text="NASA Photo of the Day"
                         src={L_NASA}
                         alt="NASA Photo of the Day"
@@ -481,7 +481,7 @@ const Projects = () => {
 
                     <ImageEvent
                         date="09/21/2020"
-                        className="text-center"
+                        className="text-center  project-title"
                         text="COVID-19 API"
                         src={L_Covid}
                         alt="COVID-19 API"
@@ -583,7 +583,7 @@ const Projects = () => {
 
                     <ImageEvent
                         date="09/14/2020"
-                        className="text-center"
+                        className="text-center  project-title"
                         text="Combo Breaker Static Layout"
                         src={L_Combo}
                         alt="Combo Breaker Static Layout"
@@ -663,7 +663,7 @@ const Projects = () => {
 
                     <ImageEvent
                         date="09/11/2020"
-                        className="text-center"
+                        className="text-center  project-title"
                         text="Mega Man CSS Creature"
                         src={L_Mega}
                         alt="Mega Man CSS Creature"
