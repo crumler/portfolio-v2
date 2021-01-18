@@ -10,6 +10,7 @@ import L_Covid from '../../assets/img/projects/covidthumbnail.webp';
 import L_Recipeazy from '../../assets/img/projects/recipeazy.webp';
 import L_Combo from '../../assets/img/projects/cbthumbnail.webp';
 import L_Mega from '../../assets/img/projects/creaturethumbnail.webp';
+import L_MKApp from '../../assets/img/projects/mkweatherapp.webp';
 
 // Skill Images
 import L_REACT from "../../assets/img/skills/react.svg";
@@ -53,6 +54,122 @@ const Projects = () => {
             <h1 className="pt-3 text-center font-details-b pb-3">Projects</h1>
             <Timeline theme={customTheme}>
                 <Events>
+                    {/* Mortal Kombat Weather App */}
+                    <ImageEvent
+                        date="01/18/2021"
+                        className="text-center project-title"
+                        text="Mortal Kombat Weather App"
+                        src={L_MKApp}
+                        alt="Mortal Kombat Weather App"
+                    >
+                        <div className="d-flex justify-content-between flex-column mt-1">
+                            <div>
+                                <Accordion>
+                                    <Card>
+                                        <Accordion.Toggle
+                                            as={Card.Header}
+                                            eventKey="0"
+                                            className="p-2 text-center accordian-main"
+                                            style={{ backgroundColor: "#2d43ba" }}
+                                        >
+                                            Project Details
+                                        </Accordion.Toggle>
+
+                                        <Accordion.Collapse eventKey="0" className="text-left">
+                                            <Card.Body>
+                                                <strong>Description:</strong> This is a project that I created utilizing the OpenWeatherMap API.  What makes this project unique is that I use a custom font that was created by someone that took inspiration from the video game "Mortal Kombat 11".  This is also my first project where I created my own media queries for better responsiveness.
+                                                <hr />
+                                                <strong>Features:</strong>
+                                                <ul className="list-styles pt-1">
+                                                    <li>Users can search for a city to find its current weather</li>
+                                                    <li>Created using React and Material-UI</li>
+                                                    <li>Responsive Design</li>
+                                                </ul>
+                                                <hr />
+                                                <strong>Technology used:</strong>
+                                                <ul>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_HTML5}
+                                                                alt="HTML 5"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                        HTML5
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_CSS3}
+                                                                alt="CSS 3"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                        CSS3
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_REACT}
+                                                                alt="React"
+                                                                rounded
+                                                                className="image-style1 m-1"
+                                                            ></Image>{" "}
+                                                        React
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_MATERIALUI}
+                                                                alt="Material-UI"
+                                                                rounded
+                                                                className="image-style1 m-1"
+                                                            ></Image>{" "}
+                                                        Material-UI
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_HEROKU}
+                                                                alt="Heroku"
+                                                                rounded
+                                                                className="image-style1 m-1"
+                                                            ></Image>{" "}
+                                                        Heroku
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_GIT}
+                                                                alt="Github"
+                                                                rounded
+                                                                className="image-style1 m-1"
+                                                            ></Image>{" "}
+                                                        Github
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                </Accordion>
+                            </div>
+                            <div className="d-flex justify-content-between flex-nowrap text-center">
+                                <UrlButton
+                                    href="https://mk-weatherapp.herokuapp.com/"
+                                    target="_blank"
+                                >
+                                    Deployed Version
+                                </UrlButton>
+                            </div>
+                        </div>
+                    </ImageEvent>
                     {/* Spotify Music Playlist */}
                     <ImageEvent
                         date="12/08/2020"
