@@ -113,6 +113,17 @@ const Projects = () => {
                                                     <li>
                                                         <span className="p-2">
                                                             <Image
+                                                                src={L_JAVASCRIPT}
+                                                                alt="JavaScript"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                        JavaScript
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
                                                                 src={L_REACT}
                                                                 alt="React"
                                                                 rounded
