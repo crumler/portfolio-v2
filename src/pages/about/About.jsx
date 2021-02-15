@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import './About.style.css';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
-import ProfilePic from '../../assets/img/profile/profilepicture.webp';
+import ProfilePic from '../../assets/img/profile/profilepicture2.webp';
 
 
 const About = () => {

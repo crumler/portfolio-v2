@@ -11,6 +11,7 @@ import L_Recipeazy from '../../assets/img/projects/recipeazy.webp';
 import L_Combo from '../../assets/img/projects/cbthumbnail.webp';
 import L_Mega from '../../assets/img/projects/creaturethumbnail.webp';
 import L_MKApp from '../../assets/img/projects/mkweatherapp.webp';
+import L_Ghost from '../../assets/img/projects/ghost.webp';
 
 // Skill Images
 import L_REACT from "../../assets/img/skills/react.svg";
@@ -54,7 +55,106 @@ const Projects = () => {
             <h1 className="pt-3 text-center font-details-b pb-3">Projects</h1>
             <Timeline theme={customTheme}>
                 <Events>
-                    {/* Mortal Kombat Weather App */}
+                    {/* Ghost Bear Pizza website */}
+                    <ImageEvent
+                        date="02/15/2021"
+                        className="text-center project-title"
+                        text="Ghost Bear Pizza website"
+                        src={L_Ghost}
+                        alt="Ghost Bear Pizza website"
+                    >
+                        <div className="d-flex justify-content-between flex-column mt-1">
+                            <div>
+                                <Accordion>
+                                    <Card>
+                                        <Accordion.Toggle
+                                            as={Card.Header}
+                                            eventKey="0"
+                                            className="p-2 text-center accordian-main"
+                                            style={{ backgroundColor: "#2d43ba" }}
+                                        >
+                                            Project Details
+                                        </Accordion.Toggle>
+
+                                        <Accordion.Collapse eventKey="0" className="text-left">
+                                            <Card.Body>
+                                                <strong>Description:</strong> I created this side project because I wanted to sharpen my skills in HTML/CSS/JavaScript.  This site includes a shopping cart feature where customers can add food products to their shopping cart and their cart is tracked using the browser's Local Storage.
+                                                <hr />
+                                                <strong>Features:</strong>
+                                                <ul className="list-styles pt-1">
+                                                    <li>Utilizes the browser's local storage to track added shopping cart items</li>
+                                                    <li>Built using HTML/CSS/JavaScript</li>
+                                                    <li>Responsive Design via media queries</li>
+                                                </ul>
+                                                <hr />
+                                                <strong>Technology used:</strong>
+                                                <ul>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_HTML5}
+                                                                alt="HTML 5"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                        HTML5
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_CSS3}
+                                                                alt="CSS 3"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                        CSS3
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_JAVASCRIPT}
+                                                                alt="JavaScript"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                        JavaScript
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_GIT}
+                                                                alt="Github"
+                                                                rounded
+                                                                className="image-style1 m-1"
+                                                            ></Image>{" "}
+                                                        Github
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                </Accordion>
+                            </div>
+                            <div className="d-flex justify-content-between flex-nowrap text-center">
+                                <UrlButton
+                                    href="https://crumler.github.io/GhostBearPizza/"
+                                    target="_blank"
+                                >
+                                    Deployed Version
+                                </UrlButton>
+                                <UrlButton
+                                    href="https://github.com/crumler/GhostBearPizza"
+                                    target="_blank"
+                                >
+                                    Source Code
+                                </UrlButton>
+                            </div>
+                        </div>
+                    </ImageEvent>
                     <ImageEvent
                         date="01/18/2021"
                         className="text-center project-title"
