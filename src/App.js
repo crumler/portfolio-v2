@@ -3,8 +3,7 @@ import { Parallax } from 'react-parallax';
 import Container from "react-bootstrap/Container";
 import Fade from "react-reveal/Fade";
 import Slide from 'react-reveal/Slide';
-import Particles from 'react-particles-js';
-import { particlesOptions } from './particlesOptions';
+
 // Import of Components
 import MyNavbar from './components/navbar/Navbar';
 import MyCarousel from './components/carousel/Carousel';
@@ -23,8 +22,6 @@ const App = () => {
   return (
     <div className="App" style={{ position: "relative" }}>
       <MyNavbar />
-
-      <Particles className="particles particles-box" params={particlesOptions} />
 
       <MyCarousel />
       <TitleMessage />

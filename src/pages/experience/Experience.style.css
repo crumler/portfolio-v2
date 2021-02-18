@@ -1,17 +1,11 @@
 
-.img-resize {
-    width: 10em;
-  }
-  
-  .style {
-    font-size: 20px;
-  }
-  
-  .jumbo-style {
-    background-image: linear-gradient(-225deg, #1e285d 0%, #3d5af1 48%, #22d1ee 100%);
-  }
-  
-  .body-title-style {
-    font-size: 25px;
-    font-weight: 800;
-  }
+.img-resize {width: 10em;}
+
+.style {font-size: 20px;}
+
+.jumbo-style {background-image: linear-gradient(-225deg, #1e285d 0%, #3d5af1 48%, #22d1ee 100%);}
+
+.body-title-style {
+  font-size: 25px;
+  font-weight: 800;
+}
