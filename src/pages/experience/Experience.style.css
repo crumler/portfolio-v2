@@ -9,3 +9,6 @@
   font-size: 25px;
   font-weight: 800;
 }
+
+ul,
+li { padding: 0 10px; }
