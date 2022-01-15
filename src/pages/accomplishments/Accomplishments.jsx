@@ -9,6 +9,8 @@ import L_HTML_CSS from "../../assets/img/accomplishments/html_css_cert.webp";
 // Skill Images
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
 import L_CSS3 from "../../assets/img/skills/css3.svg";
+import L_JS from "../../assets/img/skills/javascript.svg";
+import L_CIW from "../../assets/img/accomplishments/html_css_ciw_cert.webp";
 import Image from "react-bootstrap/Image";
 
 import "./Accomplishments.style.css";
@@ -38,6 +40,75 @@ const Accomplishments = () => {
             <h1 className="pt-3 text-center font-details-b pb-3">Accomplishments</h1>
             <Timeline theme={customTheme}>
                 <Events>
+                <ImageEvent
+                        date="07/23/2021"
+                        className="text-center project-title"
+                        text="CIW Advanced HTML5 and CSS3 Specialist"
+                        src={L_CIW}
+                        alt="CIW Advanced HTML5 and CSS3 SpecialistCertification"
+                    >
+                        <div className="d-flex justify-content-between flex-column mt-1">
+                            <Accordion>
+                                <Card>
+                                    <Accordion.Toggle
+                                    as={Card.Header}
+                                    eventKey="0"
+                                    className="p-2 text-center accordian-main"
+                                    style={{backgroundColor: "#2d43ba"}}>
+                                        Accomplishment Details
+                                        </Accordion.Toggle>
+
+                                        <Accordion.Collapse
+                                            eventKey="0"
+                                            className="text-left">
+                                                <Card.Body>
+                                                    <strong>Description:</strong> I received this certification after passing the Certified Internet Web Professional (CIW) Advanced HTML5 and CSS3 Specialist exam.
+                                                    <hr />
+                                                    <strong>Features:</strong>
+                                                    <ul className="list-styles pt-1">
+                                                        <li>Demonstrated professional knowledge of HTML5, CSS3, and JavaScript</li>
+                                                    </ul>
+                                                    <hr />
+                                                    <strong>Subject Matter:</strong>
+                                                <ul>
+                                                        <li><span className="p-2">
+                                                            <Image
+                                                                src={L_HTML5}
+                                                                alt="HTML5"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                        HTML5
+                                                        </span></li>
+                                                        <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_CSS3}
+                                                                alt="CSS3"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                        CSS3
+                                                        </span></li>
+                                                        <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={L_JS}
+                                                                alt="JavaScript"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                        JavaScript
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                </Card>
+                            </Accordion>
+                        </div>
+                    </ImageEvent>
+
                     <ImageEvent
                         date="01/13/2021"
                         className="text-center project-title"
